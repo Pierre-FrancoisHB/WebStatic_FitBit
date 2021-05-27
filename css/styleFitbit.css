@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+
+.btn {
+    border: 1px solid white;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 60px;
+    line-height: 80px; 
+}
+
+ h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+
+/***********************
+HEADER
+************************/
+
+header {
+    background: linear-gradient(45deg, #f29492d2 40%,  #3bbdf0d5 90%),
+      url(../img/03-Montre-560x420.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.411);
+    color: white;
+    margin-bottom: 60px;
+}
+header #menu img {
+    height: 40px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+}
+header ul {
+    display: flex;
+}
+header ul li a{
+    margin-left: 50px;
+    font-size: 14px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+header div {
+    text-align: center;
+    padding: 10px 0 100px;
+}
+header aside p {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/****************************
+       MAIN
+****************************/
+
+#Presentation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+#Presentation img {
+    width: 25%;
+    margin-right: 40px;
+    }
+
+
+
+#quitter {
+    box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 50px 10px;
+}
+#quitter h2 {
+    color: #F29492;
+    text-align: center;
+}
+#quitter ul {
+    display: flex;
+   }
+#quitter ul li {
+    text-align: center;
+       padding: 0 10px;
+}
+#quitter ul li img {
+    width: 60px;
+}
+#quitter ul li p {
+    font-size: 11px;
+}
+
+
+
+#Fonctionnalite h2 {
+    text-align: center;
+    margin: 100px 0;
+    position: relative;
+}
+#Fonctionnalite h2::before {
+    content: "";
+    height: 28px;
+    width: 56%;
+    position: absolute;
+    z-index: -2;
+    top: 36px;
+    left: 32%;
+    background: #F29492;
+    border-radius: 40px;
+}
+#Fonctionnalite h2::after {
+    content: "";
+    height: 30px;
+    width: 220px;
+    position: absolute;
+    z-index: -1;
+    top: 54px;
+    left: 69%;
+    background: rgba(17,67,87,0.75);
+    border-radius: 0 40px 40px 40px;
+}
+#Fonctionnalite ul {
+    position: relative;
+}
+#Fonctionnalite ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#Fonctionnalite ul li img {
+    width: 300px;
+}
+#Fonctionnalite ul li div {
+    margin-left: 50px;
+}
+#Fonctionnalite ul li h3 {
+    font-size: 27px;
+}
+
+
+
+#Application {
+    box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin-bottom: 150px;
+    padding: 60px 290px 90px 20px;
+    position: relative;
+}
+#Application h2 {
+    color: #F29492;
+}
+
+#Application a {
+    text-transform: none;
+    color: white;
+    background-color: #F29492;
+}
+
+#Application img {
+    position: absolute;
+    width: 280px;
+    z-index: 1;
+    top: -81px;
+    left: 790px;
+}
+
+/****************************
+       FOOTER
+****************************/
+
+footer {
+    background: linear-gradient(to right, #f29492f3, #A6787D 50%, #3bbdf0d5);
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    color:white;
+    padding: 25px 0 25px;
+}
+
+
+/*****************************
+         RESPONSIVE              
+***************************** /
+
+
+/* Media querie ordinateur écran sup à 990px */
+@media screen and (min-width: 991px) {
+#Fonctionnalite ul li:nth-of-type(2) {
+            flex-direction: row-reverse;
+            margin-left: 0;
+            margin-right: 50px;
+    }
+#Fonctionnalite ul li:nth-of-type(2) {
+            flex-direction: row-reverse;
+            margin-left: 0;
+            margin-right: 50px;
+    }
+footer {
+    border-radius: 0 0 0 0;
+}
+  }
+  
+/* Media querie tablette écrans entre 768px et 990px */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+header nav ul, aside .btn  {
+        display: none;
+ }
+#Presentation img {
+    margin-left: 20px;
+}
+#quitter {
+    margin: 0 20px 0;
+}
+#Application {
+    padding: 60px 20px 60px 20px;
+}
+#Application img {
+    display: none;
+}
+
+}
+
+/* Media querie mobile  écrans jusqu'à 767px */
+@media screen and (max-width: 767px) {  
+    header nav ul, aside .btn  {
+        display: none;
+    }
+    header h1 {
+        font-size: 45px;
+    }
+    #Presentation {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    #Presentation img {
+        width: 280px;
+    }
+    #quitter {
+        margin: 0 20px 0;
+    }
+    #quitter ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    #Fonctionnalite h2::before {
+        top: 36px;
+    }
+    #Fonctionnalite h2::after {
+        top: 55px;
+        left: 240px;
+        width: 126px;
+    }
+    #Fonctionnalite ul li {
+        flex-direction: column;
+    }
+    #Fonctionnalite ul li div {
+        margin: 30px 50px 20px 20px;
+    }
+    #Application {
+        padding: 420px 20px 90px 20px;
+    }
+    
+    #Application img {
+        width: 280px;
+        z-index: 1;
+        top: -60px;
+        left: calc(50% - 140px);
+    }
+
+}
