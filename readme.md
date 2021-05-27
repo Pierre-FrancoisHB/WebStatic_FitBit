@@ -1,6 +1,6 @@
 # Fitbit
 
-> Bonus : faire la gestion du menu en responsive
+Here's a small project to test my knowledge about html/css without js. Integration work so ! 🔥
 
 ## CSS
 
